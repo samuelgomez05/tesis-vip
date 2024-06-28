@@ -135,12 +135,21 @@ img {
 
 .hero__main { padding-block: 5rem; }
 
+.hero__main--center { text-align: center; }
+
 /* HEADER - HERO */
 .hero {
-  background-image: linear-gradient(to left, #00000000, #000000cc), url("../assets/img/hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero--home { 
+  background-image: linear-gradient(to left, #00000000, #000000cc), url("../assets/img/hero.webp"); 
+}
+
+.hero--pay {
+  background-image: linear-gradient(to left, #252525cc, #252525cc), url("../assets/img/hero-two.webp");
 }
 
 /* HEADER - HERO - NAV DATA */
@@ -1379,6 +1388,20 @@ img {
   }
 }
 
+/* PAGE PAY - STRIPE */
+.pay {
+  padding-block: var(--padding-size);
+  background-color: var(--color-four); 
+}
+
+.pay__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
 /* RESPONSIVE */
 @media (width >= 375px) {
   /* SECTION ABOUT */
@@ -1618,6 +1641,11 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
+
+  /* SECTION PROCESSES */
+  .pay__texts { text-align: center; }
+
+  .pay__guide { margin-inline: auto; }
 }
 
 @media (width >= 1024px) {
@@ -1650,11 +1678,12 @@ img {
 
   .hero__texts { text-align: left; }
 
-  .hero__title {
+  .hero__title { font-size: 3.25rem; }
+
+  .hero__title--home {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    font-size: 3.25rem;
   }
 
   .hero__content .form { flex-shrink: 0; }
