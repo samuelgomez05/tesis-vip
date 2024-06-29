@@ -137,6 +137,11 @@ img {
 
 .hero__main--center { text-align: center; }
 
+.center {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
 /* HEADER - HERO */
 .hero {
   background-position: center;
@@ -317,6 +322,22 @@ img {
   color: var(--color-five);
   background-color: var(--color-four);
   border-radius: 1.5rem;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.form--transparent {
+  color: var(--color-four);
+  background-color: #ffffff40;
+  backdrop-filter: blur(5px);
+
+  .form__input { 
+    background-color: var(--color-four); 
+  }
+
+  .form__paragraph {
+    font-weight: 400;
+    color: inherit;
+  }
 }
 
 .form__title{
@@ -343,6 +364,7 @@ img {
   border: 1px solid #aeaeae;
   border-radius: 1.5rem;
   outline: none;
+  transition: border-color .3s;
 
   &::placeholder {
     font-weight: 600;
@@ -355,7 +377,7 @@ img {
   }
 }
 
-.form__input--submit {
+.form .form__input--submit {
   padding-inline: 4rem;
   font-weight: 700;
   color: var(--color-five);
@@ -793,7 +815,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 700px;
   margin-bottom: 3rem;
 }
 
@@ -939,8 +960,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 700px;
-  margin-inline: auto;
 }
 
 .services__group {
@@ -1010,11 +1029,6 @@ img {
 .opinions { background-color: var(--color-four); }
 
 .opinions__content { padding-block: var(--padding-size); }
-
-.opinions__texts {
-  max-width: 700px;
-  margin-inline: auto;
-}
 
 .opinions__title { margin-bottom: 1.5rem; }
 
@@ -1398,7 +1412,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 700px;
   margin-bottom: 3rem;
 }
 
@@ -1465,6 +1478,14 @@ img {
 }
 
 @media (width >= 768px) {
+  .center {
+    text-align: center;
+
+    .guide {
+      margin-inline: auto;
+    }
+  }
+
   /* HEADER - HERO - NAV DATA */
   .data__animate {
     justify-content: space-between;
@@ -1567,12 +1588,7 @@ img {
   .result { flex-basis: 150px; }
 
   /* SECTION PROCESSES */
-  .processes__texts { 
-    margin-bottom: 5rem;
-    text-align: center;
-  }
-
-  .processes__guide { margin-inline: auto; }
+  .processes__texts { margin-bottom: 5rem; }
 
   .processes__background { transform: translateY(0) rotate(0) scale(1); }
 
@@ -1582,13 +1598,6 @@ img {
   .services { background-color: var(--color-six); }
 
   .services__content { gap: 4rem; }
-
-  .services__texts { text-align: center; }
-
-  .services__guide { margin-inline: auto; }
-
-  /* SECTION OPINIONS */
-  .opinions__texts { text-align: center; }
   
   /* SECTION FAQS */
   .faqs__content { gap: 4rem; }
@@ -1641,11 +1650,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
-
-  /* SECTION PROCESSES */
-  .pay__texts { text-align: center; }
-
-  .pay__guide { margin-inline: auto; }
 }
 
 @media (width >= 1024px) {
