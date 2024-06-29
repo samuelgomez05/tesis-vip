@@ -157,6 +157,14 @@ img {
   background-image: linear-gradient(to left, #252525cc, #252525cc), url("../assets/img/hero-two.webp");
 }
 
+.hero--about-us,
+.hero--contact,
+.hero--blog,
+.hero__carrers {
+  background-image: linear-gradient(to left, #252525cc, #252525cc), url("../assets/img/hero-sobre-nosotros.webp");
+  background-position: top;
+}
+
 /* HEADER - HERO - NAV DATA */
 .data { background-color: #fbbb1e; }
 
@@ -1246,6 +1254,7 @@ img {
 }
 
 .contact__icon {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1413,6 +1422,235 @@ img {
   flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 3rem;
+}
+
+/* PAGE ABOUT US */
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+/* SECTION WHAT IS */
+.what-is { background-color: var(--color-four); }
+
+.what-is__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.what-is__principal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.what-is__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.what-is__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.what-is__card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.what-is__icon {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-one);
+  border-radius: 50%;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.what-is__icon--dark {
+  color: var(--color-four);
+  background-color: var(--color-five);
+}
+
+.what-is__name {
+  font-weight: 600;
+  color: var(--color-five);
+}
+
+.what-is__group {
+  display: grid;
+}
+
+.what-is__figure {
+  border: 8px solid var(--color-four);
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+
+  &:nth-child(2) {
+    width: 90%;
+    margin-top: -5rem;
+    margin-inline: auto;
+    aspect-ratio: 1080 / 721;
+  }
+}
+
+/* SECTION ABOUT COMPANY */
+.about-company { background-color: var(--color-four); }
+
+.about-company__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.about-company__figure {
+  order: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+
+.about-company__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-company__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.about-company__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-one);
+  border: 2px solid var(--color-one);
+  border-radius: 50%;
+  transition: box-shadow .3s, transform .3s;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 4px #00000040;
+  }
+}
+
+/* SECTION MISSION */
+.mission { background-color: var(--color-four); }
+
+.mission__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.mission__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mission__figure {
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+
+/* SECTION VISION */
+.vision { background-color: var(--color-four); }
+
+.vision__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.vision__figure {
+  order: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 1080 / 719;
+}
+
+.vision__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* SECTION VALUES */
+.values { background-color: var(--color-six); }
+
+.values__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.values__title { text-align: center; }
+
+.values__group {
+  display: grid;
+  gap: 2rem;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  width: 300px;
+  padding: 2rem;
+  margin-inline: auto;
+  color: var(--color-eight);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.value__number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: inherit;
+  line-height: 1;
+}
+
+.value__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: inherit;
 }
 
 /* RESPONSIVE */
