@@ -1954,6 +1954,120 @@ img {
   }
 }
 
+/* PAGE CAREERS */
+/* SECTION CAREERS */
+.careers { background-color: var(--color-four); }
+
+.careers__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.careers__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.careers__group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  gap: 3rem;
+}
+
+.service--careers {
+  max-width: 100%;
+}
+
+.service--careers .service__figure {
+  background-color: #f2f2f2;
+}
+
+.career-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SECTION HOW */
+.how { background-color: var(--color-six); }
+
+.how__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.how__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.how__group {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 200px));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.how__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color-four);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border: 3px solid #e8e8e8;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.how__item-number {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-four);
+  background-color: var(--color-one);
+  border-radius: 50%;
+}
+
+.how__item-paragraph {
+  font-weight: 600;
+  color: var(--color-five);
+}
+
+.promo--careers {
+  padding-block: 3rem;
+  background-image: linear-gradient(var(--color-six) 50%, var(--color-nine) 50%); 
+}
+
 /* RESPONSIVE */
 @media (width >= 375px) {
   /* SECTION ABOUT */
