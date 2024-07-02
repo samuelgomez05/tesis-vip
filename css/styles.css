@@ -403,6 +403,31 @@ img {
   }
 }
 
+.form__input--select {
+  width: 100%;
+  height: 59px;
+  padding-right: 2.5rem;
+  font-weight: 600;
+  color: var(--color-seven);
+  cursor: pointer;
+  background-image: url("../assets/icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: right 1rem center;
+  -webkit-appearance: none; /* Ocultar icono por defecto del select en navegadores webkit*/
+  -moz-appearance: none; /* Ocultar icono por defecto del select en navegador mozilla firefox */
+  appearance: none; /* Ocultar icono por defecto del select */
+
+  option {
+    color: var(--color-five);
+  }
+}
+
+.form__input--textarea {
+  height: 100px;
+  resize: none;
+}
+
 .form .form__input--submit {
   padding-inline: 4rem;
   font-weight: 700;
@@ -491,14 +516,16 @@ img {
 }
 
 .benefit {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   padding: 1.5rem;
-  text-align: center;
   background-color: #1d1d1d;
   border-radius: 1rem;
 }
 
 .benefit__number {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -2044,8 +2071,8 @@ img {
 
 .how__item-number {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: .7rem;
+  top: .7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2095,6 +2122,8 @@ img {
     border-bottom: none;
     border-right: 1px solid var(--color-four);
   }
+
+  .benefits__list { grid-template-columns: repeat(2, 1fr); }
 
   /* SECTION SERVICES */
   .services__group {
@@ -2195,6 +2224,14 @@ img {
   .benefits__group-number { padding-right: 3rem; }
 
   .benefits__list { grid-template-columns: repeat(2, 1fr); }
+
+  .benefit {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  
+  .benefit__number { font-size: 5rem; }
 
   /* SECTION PROMO */
   .promo__content {
