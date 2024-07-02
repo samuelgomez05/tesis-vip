@@ -2205,18 +2205,20 @@ img {
   .data__animate {
     justify-content: space-between;
     gap: 1rem;
-    height: 3rem;
-    font-size: .7rem;
+    height: 3.5rem;
     animation: none;
   }
 
   .data__texts {
     flex-direction: column;
     gap: 0;
-    font-size: .6rem;
   }
 
-  .data__menu { gap: .5rem; }
+  .data__menu {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: .5rem 1rem; 
+  }
 
   /* HEADER - HERO - NAV NAVBAR */
   .navbar__logo { width: 180px; }
@@ -2459,17 +2461,6 @@ img {
   :root { --padding-size: 5rem; }
 
   .title { font-size: 2.5rem; }
-
-  /* HEADER - HERO - NAV DATA */
-  .data__animate {
-    gap: 3rem;
-    height: 3.5rem;
-    font-size: .8rem;
-  }
-
-  .data__texts { font-size: inherit; }
-
-  .data__menu { gap: 1.5rem; }
 
   /* HEADER - HERO - NAV NAVBAR */
   .navbar__logo { width: 200px; }
