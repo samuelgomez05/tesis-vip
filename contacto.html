@@ -195,9 +195,26 @@
           </div>
           <form class="form__form" action="" method="post">
             <input class="form__input" type="text" placeholder="Nombres">
-            <input class="form__input" type="text" placeholder="Carrera">
+            <select class="form__input form__input--select">
+              <option value="" selected disabled>Seleccione una carrera</option>
+              <option value="ciencias-sociales">Ciencias Sociales</option>
+              <option value="ciencias-de-la-salud">Ciencias de la Salud</option>
+              <option value="ciencias-empresariales">Ciencias Empresariales</option>
+              <option value="ingenierias-y-arquitectura">Ingenierías y Arquitectura</option>
+              <option value="ciencias-biologicas-y-agronomas">Ciencias Biológicas y Agrónomas</option>
+              <option value="ciencias-basicas">Ciencias Básicas</option>
+              <option value="carreras-tecnicas">Carreras Técnicas</option>
+              <option value="otros">Otros</option>
+            </select>
             <input class="form__input" type="tel" placeholder="Celular">
-            <input class="form__input" type="email" placeholder="Correo Electrónico">
+            <select class="form__input form__input--select">
+              <option value="" selected disabled>Seleccione un servicio</option>
+              <option value="redaccion-tesis-pregrado">Redacción de Tesis de Pregrado</option>
+              <option value="redaccion-tesis-postgrado">Redacción de Tesis de Postgrado</option>
+              <option value="levantamiento-observaciones">Levantamiento de Observaciones</option>
+              <option value="parafraseo">Parafraseo</option>
+            </select>
+            <textarea class="form__input form__input--textarea" placeholder="Escribe tu mensaje aquí"></textarea>
             <input class="form__input form__input--submit" type="submit" value="Enviar">
           </form>
         </div>
