@@ -520,6 +520,7 @@ img {
   align-items: center;
   gap: 2rem;
   padding: 1.5rem;
+  padding-left: 15%;
   background-color: #1d1d1d;
   border-radius: 1rem;
 }
