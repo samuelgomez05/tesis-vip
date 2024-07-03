@@ -284,7 +284,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .5rem;
   width: 100%;
   max-width: 300px;
   height: 300px;
@@ -295,11 +294,15 @@
 }
 
 .results__guide {
-  padding: .5rem 1rem;
+  margin-bottom: .8rem;
+  padding: .3rem 1rem;
   font-size: .8rem;
 }
 
 .results__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
   line-height: 1;
 
   .one {
@@ -1132,12 +1135,6 @@
 
   /* SECTION RESULTS */
   .results__group-one { padding: 2rem; }
-
-  .results__guide { margin-bottom: .5rem; }
-
-  .results__title { margin-bottom: .5rem; }
-  
-  .results__paragraph { font-size: 1rem; }
 
   .results__group-two { max-width: 650px; }
 
