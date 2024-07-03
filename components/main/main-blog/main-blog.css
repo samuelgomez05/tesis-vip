@@ -1,0 +1,154 @@
+/* PAGE BLOG */
+.blog { background-color: var(--color-four); }
+
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-size);
+}
+
+.blog__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog__select-category {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: .95rem;
+  color: var(--color-eight);
+}
+
+.blog__label {
+  font-size: inherit;
+  font-weight: 600;
+  color: inherit;
+}
+
+.blog__select {
+  padding: .25rem 1.5rem;
+  padding-right: 3rem;
+  font-size: inherit;
+  font-weight: 600;
+  color: inherit;
+  background-color: var(--color-one);
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-image: url("../assets/icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: right 1rem center;
+  -webkit-appearance: none; /* Ocultar icono por defecto del select en navegadores webkit*/
+  -moz-appearance: none; /* Ocultar icono por defecto del select en navegador mozilla firefox */
+  appearance: none; /* Ocultar icono por defecto del select */
+  transition: box-shadow .3s, outline .3s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 4px #00000040;
+    outline: 1px solid var(--color-eight);
+  }
+}
+
+.blog__articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 3rem;
+}
+
+.article {
+  position: relative;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 4px #00000040;
+  overflow: hidden;
+}
+
+.article__figure {
+  height: 200px;
+  background-color: #f2f2f2;
+}
+
+.article__category {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .5rem 1.5rem;
+  font-weight: 600;
+  color: var(--color-four);
+  background-color: var(--color-one);
+  border-radius: 1.5rem;
+}
+
+.article__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.article__title {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-eight);
+}
+
+.article__paragraph { font-size: .9rem; }
+
+.article__cta {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-one);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.blog__navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  font-weight: 600;
+  color: var(--color-eight);
+}
+
+.blog__navigation-title { color: inherit; }
+
+.blog__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color .3s;
+
+  &:hover,
+  &:focus {
+    background-color: #1a284e33;
+  }
+}
+
+@media (width >= 1024px) {
+  /* PAGE BLOG */
+  .blog__content { gap: 4rem; }
+
+  .blog__select-category { font-size: 1rem; }
+
+  .blog__articles { gap: 4rem; }
+}

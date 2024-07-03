@@ -1,0 +1,62 @@
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  z-index: 20;
+  right: .5rem;
+  bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--color-four);
+  background-color: #0d9e15;
+  border-radius: 50%;
+
+  svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: #0d9e15;
+    border-radius: 50%;
+    animation: ping 0.95s ease-in-out infinite both;
+  }
+
+  &:hover::after {
+    animation: none;
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@media (width >= 768px) {
+  /* WHATSAPP */
+  .whatsapp {
+    width: 4rem;
+    height: 4rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
