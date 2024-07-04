@@ -1024,8 +1024,6 @@
   .processes__group-content { gap: 2.5rem; }
 
   /* SECTION SERVICES */
-  .services { background-color: var(--color-six); }
-
   .services__content { gap: 4rem; }
   
   /* SECTION FAQS */
